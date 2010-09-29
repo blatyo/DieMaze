@@ -4,10 +4,12 @@ import heuristics
 
 class Solver(object):
 	def __init__(self, file_name):
+		"""Sets up traversal graphs"""
 		self.maze = graphs.Maze(file_name)
 		self.die = graphs.Die()
 	
 	def solve(self):
+		"""Iterates over the three heuristics and and executes a search with that heuristic."""
 		for heuristic in (heuristics.euclidian_distance, heuristics.manhattan_distance, heuristics.die_roll_distance):
 			self.print_heuristic_name(heuristic)
 			ms = state.MazeState(self.maze)
@@ -16,6 +18,7 @@ class Solver(object):
 			self.search(cs, heuristic)
 	
 	def search(self, cs, heuristic):
+		"""Performs an A* search over the state space."""
 		closed_list, g, h, f = {}, {}, {}, {}
 		start = cs.get_state()
 		goal = cs.goal_state()
@@ -67,23 +70,28 @@ class Solver(object):
 		print "No solution"
 	
 	def print_stats(self, states_generated, states_visited):
+		"""Prints stats in a nice format."""
 		print "States generated: ", states_generated
 		print "States visited:", states_visited
 		print
 	
 	def print_heuristic_name(self, heuristic):
+		"""Prints the heuristic name"""
 		print heuristic.__name__.replace("_", " ").capitalize()
 		print "=========================="
 
 	def print_solution(self, came_from, current_node, first = True):
+		"""Regenerates and prints the solution"""
 		ms = state.MazeState(self.maze)
 		ds = state.DieState(self.die)
 		cs = state.CombinedState(ms, ds)
 		if came_from.get(current_node):
 			last_node = current_node
 			current_node = came_from.get(current_node)
-			cs.set_state(current_node[0])
+			
 			retval = self.print_solution(came_from, current_node[0], False)
+			
+			cs.set_state(current_node[0])
 			print cs.describe_state(), "\n"
 			print "Move %s to:" % (current_node[1])
 			if first:

@@ -1,8 +1,8 @@
 import graphs
 
+Moves = ['up', 'right', 'down', 'left']
+
 class MazeState:
-	Moves = ['up', 'right', 'down', 'left']
-	
 	def __init__(self, maze):
 		self.maze = maze
 		self.position = maze.start
@@ -23,15 +23,13 @@ class MazeState:
 		moves = {}
 		for i in range(4):
 			if self.position.transitions[i]:
-				moves[self.Moves[i]] = (self.position.transitions[i])
+				moves[Moves[i]] = (self.position.transitions[i])
 		return moves
 	
 	def goal_reached(self):
 		return self.position == self.maze.goal
 
 class DieState:
-	Moves = ['up', 'right', 'down', 'left']
-	
 	def __init__(self, die):
 		self.die = die
 		self.position = die.start
@@ -54,8 +52,8 @@ class DieState:
 		moves = {}
 		for i in range(4):
 			if self.position.transitions[(self.north + 2 + i) % 4] != self.die.states[6]: 
-				self.move(self.Moves[i])
-				moves[self.Moves[i]] = (self.position, self.north)
+				self.move(Moves[i])
+				moves[Moves[i]] = (self.position, self.north)
 				self.rewind()
 		return moves
 		

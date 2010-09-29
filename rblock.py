@@ -2,6 +2,7 @@ import sys
 import rblock.solver
 		
 def main():
+	"""Starts program"""
 	solver = rblock.solver.Solver(sys.argv[1])
 	solver.solve()
 
