@@ -14,7 +14,7 @@ class MazeState:
 		return self.position
 		
 	def state_name(self):
-		return self.position.name
+		return "Position: %s" % (self.position.name)
 		
 	def goal_state(self):
 		return (self.maze.goal)
@@ -45,7 +45,7 @@ class DieState:
 		return (self.position, self.north)
 		
 	def state_name(self):
-		return "(%s, %s)" % (self.position.name, self.position.transitions[self.north].name)
+		return "North side: %s\nFacing side: %s" % (self.position.transitions[self.north].name, self.position.name)
 	
 	def goal_state(self):
 		return (self.die.goal)
@@ -53,7 +53,7 @@ class DieState:
 	def moves(self):
 		moves = {}
 		for i in range(4):
-			if self.position.transitions[self.north - 4 + i] != self.die.states[6]: 
+			if self.position.transitions[(self.north + 2 + i) % 4] != self.die.states[6]: 
 				self.move(self.Moves[i])
 				moves[self.Moves[i]] = (self.position, self.north)
 				self.rewind()
@@ -102,8 +102,8 @@ class CombinedState:
 	def get_state(self):
 		return (self.maze_state.get_state(), self.die_state.get_state())
 		
-	def state_name(self):
-		return "%s %s" % (self.maze_state.state_name(), self.die_state.state_name())
+	def describe_state(self):
+		return "%s\n%s" % (self.maze_state.state_name(), self.die_state.state_name())
 		
 	def goal_state(self):
 		return (self.maze_state.goal_state(), self.die_state.goal_state())
@@ -111,11 +111,9 @@ class CombinedState:
 	def moves(self):
 		m_moves = self.maze_state.moves()
 		d_moves = self.die_state.moves()
-		
 		moves = {}
 		for move in list(set(m_moves.keys()) & set(d_moves.keys())):
 			moves[move] = (m_moves[move], d_moves[move])
-			moves[move]
 
 		return moves
 		

@@ -9,6 +9,7 @@ class Solver(object):
 	
 	def solve(self):
 		for heuristic in (heuristics.euclidian_distance, heuristics.manhattan_distance, heuristics.die_roll_distance):
+			self.print_heuristic_name(heuristic)
 			ms = state.MazeState(self.maze)
 			ds = state.DieState(self.die)
 			cs = state.CombinedState(ms, ds)
@@ -22,14 +23,19 @@ class Solver(object):
 		g[start] = 0
 		h[start] = heuristic(start, goal)
 		f[start] = h[start]
+		states_generated = 1 #accounts for initial state
+		states_visited = 0
 		
 		frontier = [start]
 		while(len(frontier) > 0):
-			cs.set_state(sorted(frontier, key=lambda current: f[current])[-1]) #use best next step
+			cs.set_state(sorted(frontier, key=lambda current: f[current])[0]) #use best next step
+			states_visited += 1
 			x = cs.get_state()
 			
 			if cs.goal_reached():
-				return reconstruct_path(came_from, x)
+				self.print_stats(states_generated, states_visited)
+				self.print_solution(came_from, x)
+				return
 			
 			frontier.remove(x)
 			closed_list[x] = True
@@ -39,6 +45,8 @@ class Solver(object):
 				y = moves[move]
 				if closed_list.get(y):
 					continue
+				
+				states_generated += 1
 				
 				tentative_g = g[x] + 1
 				
@@ -55,15 +63,33 @@ class Solver(object):
 					g[y] = tentative_g
 					h[y] = heuristic(y, goal)
 					f[y] = g[y] + h[y]
-		
-		return None
+		self.print_stats(states_generated, states_visited)
+		print "No solution"
+	
+	def print_stats(self, states_generated, states_visited):
+		print "States generated: ", states_generated
+		print "States visited:", states_visited
+		print
+	
+	def print_heuristic_name(self, heuristic):
+		print heuristic.__name__.replace("_", " ").capitalize()
+		print "=========================="
 
-	def reconstruct_path(came_from, current_node):
+	def print_solution(self, came_from, current_node, first = True):
+		ms = state.MazeState(self.maze)
+		ds = state.DieState(self.die)
+		cs = state.CombinedState(ms, ds)
 		if came_from.get(current_node):
+			last_node = current_node
 			current_node = came_from.get(current_node)
-			path = reconstruct_path(came_from, current_node[0])
-			path.append(current_node)
-			return path
+			cs.set_state(current_node[0])
+			retval = self.print_solution(came_from, current_node[0], False)
+			print cs.describe_state(), "\n"
+			print "Move %s to:" % (current_node[1])
+			if first:
+				cs.set_state(last_node)
+				print cs.describe_state()
+				print "Goal!\n"
+			return retval
 		else:
-			return current_node
-				
+			print "Starting at:"
