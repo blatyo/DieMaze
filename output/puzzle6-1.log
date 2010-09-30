@@ -1,8 +1,105 @@
 Euclidian distance
 ==========================
+------ Visited States ------
+Position: (0, 1)
+North side: 2
+Facing side: 1 
+
+Going  up
+Position: (0, 0)
+North side: 1
+Facing side: 5 
+
+Going  right
+Position: (1, 0)
+North side: 1
+Facing side: 4 
+
+Going  right
+Position: (2, 0)
+North side: 1
+Facing side: 2 
+
+Going  right
+Position: (3, 0)
+North side: 1
+Facing side: 3 
+
+Going  right
+Position: (4, 0)
+North side: 1
+Facing side: 5 
+
+Going  down
+Position: (4, 1)
+North side: 2
+Facing side: 1 
+
+Going  right
+Position: (5, 1)
+North side: 2
+Facing side: 4 
+
+Going  down
+Position: (5, 2)
+North side: 3
+Facing side: 2 
+
+Going  down
+Position: (5, 3)
+North side: 5
+Facing side: 3 
+
+Going  down
+Position: (5, 4)
+North side: 4
+Facing side: 5 
+
+Going  left
+Position: (4, 3)
+North side: 5
+Facing side: 1 
+
+Going  left
+Position: (4, 4)
+North side: 4
+Facing side: 1 
+
+Going  down
+Position: (4, 4)
+North side: 6
+Facing side: 5 
+
+Going  right
+Position: (5, 4)
+North side: 6
+Facing side: 3 
+
+Going  up
+Position: (4, 3)
+North side: 1
+Facing side: 3 
+
+Going  up
+Position: (5, 3)
+North side: 3
+Facing side: 1 
+
+Going  right
+Position: (5, 3)
+North side: 1
+Facing side: 5 
+
+Going  down
+Position: (5, 4)
+North side: 2
+Facing side: 1 
+
+------ Results ------
 States generated:  21
 States visited: 19
 
+------ Solution ------
 Starting at:
 Position: (0, 1)
 North side: 2
@@ -81,9 +178,106 @@ Goal!
 
 Manhattan distance
 ==========================
+------ Visited States ------
+Position: (0, 1)
+North side: 2
+Facing side: 1 
+
+Going  up
+Position: (0, 0)
+North side: 1
+Facing side: 5 
+
+Going  right
+Position: (1, 0)
+North side: 1
+Facing side: 4 
+
+Going  right
+Position: (2, 0)
+North side: 1
+Facing side: 2 
+
+Going  right
+Position: (3, 0)
+North side: 1
+Facing side: 3 
+
+Going  right
+Position: (4, 0)
+North side: 1
+Facing side: 5 
+
+Going  down
+Position: (4, 1)
+North side: 2
+Facing side: 1 
+
+Going  right
+Position: (5, 1)
+North side: 2
+Facing side: 4 
+
+Going  down
+Position: (5, 2)
+North side: 3
+Facing side: 2 
+
+Going  down
+Position: (5, 3)
+North side: 5
+Facing side: 3 
+
+Going  down
+Position: (5, 4)
+North side: 4
+Facing side: 5 
+
+Going  left
+Position: (4, 3)
+North side: 5
+Facing side: 1 
+
+Going  left
+Position: (4, 4)
+North side: 4
+Facing side: 1 
+
+Going  down
+Position: (4, 4)
+North side: 6
+Facing side: 5 
+
+Going  right
+Position: (5, 4)
+North side: 6
+Facing side: 3 
+
+Going  up
+Position: (4, 3)
+North side: 1
+Facing side: 3 
+
+Going  up
+Position: (5, 3)
+North side: 3
+Facing side: 1 
+
+Going  right
+Position: (5, 3)
+North side: 1
+Facing side: 5 
+
+Going  down
+Position: (5, 4)
+North side: 2
+Facing side: 1 
+
+------ Results ------
 States generated:  21
 States visited: 19
 
+------ Solution ------
 Starting at:
 Position: (0, 1)
 North side: 2
@@ -162,9 +356,86 @@ Goal!
 
 Die roll distance
 ==========================
+------ Visited States ------
+Position: (0, 1)
+North side: 2
+Facing side: 1 
+
+Going  up
+Position: (0, 0)
+North side: 1
+Facing side: 5 
+
+Going  right
+Position: (1, 0)
+North side: 1
+Facing side: 4 
+
+Going  right
+Position: (2, 0)
+North side: 1
+Facing side: 2 
+
+Going  right
+Position: (3, 0)
+North side: 1
+Facing side: 3 
+
+Going  right
+Position: (4, 0)
+North side: 1
+Facing side: 5 
+
+Going  down
+Position: (4, 1)
+North side: 2
+Facing side: 1 
+
+Going  right
+Position: (5, 1)
+North side: 2
+Facing side: 4 
+
+Going  down
+Position: (5, 2)
+North side: 3
+Facing side: 2 
+
+Going  down
+Position: (5, 3)
+North side: 5
+Facing side: 3 
+
+Going  down
+Position: (5, 4)
+North side: 4
+Facing side: 5 
+
+Going  left
+Position: (4, 4)
+North side: 4
+Facing side: 1 
+
+Going  up
+Position: (4, 3)
+North side: 1
+Facing side: 3 
+
+Going  right
+Position: (5, 3)
+North side: 1
+Facing side: 5 
+
+Going  down
+Position: (5, 4)
+North side: 2
+Facing side: 1 
+
+------ Results ------
 States generated:  16
 States visited: 15
 
+------ Solution ------
 Starting at:
 Position: (0, 1)
 North side: 2

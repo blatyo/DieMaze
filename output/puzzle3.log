@@ -1,5 +1,21 @@
 Euclidian distance
 ==========================
+------ Visited States ------
+Position: (0, 0)
+North side: 2
+Facing side: 1 
+
+Going  right
+Position: (1, 0)
+North side: 2
+Facing side: 4 
+
+Going  down
+Position: (0, 1)
+North side: 6
+Facing side: 2 
+
+------ Results ------
 States generated:  3
 States visited: 3
 
@@ -7,6 +23,22 @@ No solution
 
 Manhattan distance
 ==========================
+------ Visited States ------
+Position: (0, 0)
+North side: 2
+Facing side: 1 
+
+Going  down
+Position: (0, 1)
+North side: 6
+Facing side: 2 
+
+Going  right
+Position: (1, 0)
+North side: 2
+Facing side: 4 
+
+------ Results ------
 States generated:  3
 States visited: 3
 
@@ -14,6 +46,22 @@ No solution
 
 Die roll distance
 ==========================
+------ Visited States ------
+Position: (0, 0)
+North side: 2
+Facing side: 1 
+
+Going  down
+Position: (0, 1)
+North side: 6
+Facing side: 2 
+
+Going  right
+Position: (1, 0)
+North side: 2
+Facing side: 4 
+
+------ Results ------
 States generated:  3
 States visited: 3
 

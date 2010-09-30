@@ -1,8 +1,40 @@
 Euclidian distance
 ==========================
+------ Visited States ------
+Position: (0, 0)
+North side: 2
+Facing side: 1 
+
+Going  right
+Position: (1, 0)
+North side: 2
+Facing side: 4 
+
+Going  down
+Position: (0, 1)
+North side: 6
+Facing side: 2 
+
+Going  down
+Position: (1, 1)
+North side: 3
+Facing side: 2 
+
+Going  right
+Position: (1, 1)
+North side: 6
+Facing side: 4 
+
+Going  up
+Position: (1, 0)
+North side: 4
+Facing side: 1 
+
+------ Results ------
 States generated:  7
 States visited: 6
 
+------ Solution ------
 Starting at:
 Position: (0, 0)
 North side: 2
@@ -26,9 +58,41 @@ Goal!
 
 Manhattan distance
 ==========================
+------ Visited States ------
+Position: (0, 0)
+North side: 2
+Facing side: 1 
+
+Going  right
+Position: (1, 0)
+North side: 2
+Facing side: 4 
+
+Going  down
+Position: (0, 1)
+North side: 6
+Facing side: 2 
+
+Going  down
+Position: (1, 1)
+North side: 3
+Facing side: 2 
+
+Going  right
+Position: (1, 1)
+North side: 6
+Facing side: 4 
+
+Going  up
+Position: (1, 0)
+North side: 4
+Facing side: 1 
+
+------ Results ------
 States generated:  7
 States visited: 6
 
+------ Solution ------
 Starting at:
 Position: (0, 0)
 North side: 2
@@ -52,9 +116,31 @@ Goal!
 
 Die roll distance
 ==========================
+------ Visited States ------
+Position: (0, 0)
+North side: 2
+Facing side: 1 
+
+Going  down
+Position: (0, 1)
+North side: 6
+Facing side: 2 
+
+Going  right
+Position: (1, 1)
+North side: 6
+Facing side: 4 
+
+Going  up
+Position: (1, 0)
+North side: 4
+Facing side: 1 
+
+------ Results ------
 States generated:  5
 States visited: 4
 
+------ Solution ------
 Starting at:
 Position: (0, 0)
 North side: 2
