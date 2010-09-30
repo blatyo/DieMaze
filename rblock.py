@@ -1,3 +1,5 @@
+#!/usr/bin/evn python
+
 import sys
 import rblock.solver
 		
