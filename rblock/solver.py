@@ -12,9 +12,9 @@ class Solver(object):
 		"""Iterates over the three heuristics and and executes a search with that heuristic."""
 		for heuristic in (heuristics.euclidian_distance, heuristics.manhattan_distance, heuristics.die_roll_distance):
 			self.print_heuristic_name(heuristic)
-			ms = state.MazeState(self.maze)
-			ds = state.DieState(self.die)
-			cs = state.CombinedState(ms, ds)
+			ms = state.MazeState(self.maze)  #handles state tracking and possible transitions of maze
+			ds = state.DieState(self.die)    #handles state tracking and possible transitions of die
+			cs = state.CombinedState(ms, ds) #handles state tracking and possible transitions of both
 			self.search(cs, heuristic)
 	
 	def search(self, cs, heuristic):
@@ -43,6 +43,11 @@ class Solver(object):
 			frontier.remove(x)
 			closed_list[x] = True
 			
+			# Track whats going on
+			"""if came_from.get(x):
+				print came_from.get(x)[1]
+			print cs.describe_state()"""
+			
 			moves = cs.moves()
 			for move in moves.keys():
 				y = moves[move]
@@ -67,7 +72,7 @@ class Solver(object):
 					h[y] = heuristic(y, goal)
 					f[y] = g[y] + h[y]
 		self.print_stats(states_generated, states_visited)
-		print "No solution"
+		print "No solution\n"
 	
 	def print_stats(self, states_generated, states_visited):
 		"""Prints stats in a nice format."""

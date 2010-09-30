@@ -50,11 +50,11 @@ class DieState:
 	
 	def moves(self):
 		moves = {}
-		for i in range(4):
-			if self.position.transitions[(self.north + 2 + i) % 4] != self.die.states[6]: 
-				self.move(Moves[i])
-				moves[Moves[i]] = (self.position, self.north)
-				self.rewind()
+		for move in Moves:
+			self.move(move)
+			if self.position != self.die.states[6]: 
+				moves[move] = (self.position, self.north)
+			self.rewind()
 		return moves
 		
 	def move(self, direction):
