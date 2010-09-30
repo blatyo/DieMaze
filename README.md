@@ -1,5 +1,14 @@
 # Rolling Die Mazes
 
+## Running
+To run this program:
+
+    python rblock.py <puzzle-file>
+
+## Output
+
+See output folder for examples of output.
+
 ## Problem Description
 
 For this project, you will write an A* search in python for solving rolling-die mazes. The objective is to "roll" a die along its edges through a grid until a goal location is reached. The initial state of the search is given by the die location and orientation. For this project, the die will always start with the 1 facing up ('visible'), 2 facing up/north, and 3 to the right/east: note that the sum of two opposite faces on a die is always 7. Rolling dies mazes contain obstacles, as well as restrictions on which numbers may face 'up.'
