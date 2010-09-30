@@ -1,0 +1,423 @@
+Euclidian distance
+==========================
+States generated:  1637
+States visited: 1072
+
+Starting at:
+Position: (11, 0)
+North side: 2
+Facing side: 1 
+
+Move down to:
+Position: (11, 1)
+North side: 6
+Facing side: 2 
+
+Move left to:
+Position: (10, 1)
+North side: 6
+Facing side: 3 
+
+Move left to:
+Position: (9, 1)
+North side: 6
+Facing side: 5 
+
+Move left to:
+Position: (8, 1)
+North side: 6
+Facing side: 4 
+
+Move left to:
+Position: (7, 1)
+North side: 6
+Facing side: 2 
+
+Move left to:
+Position: (6, 1)
+North side: 6
+Facing side: 3 
+
+Move left to:
+Position: (5, 1)
+North side: 6
+Facing side: 5 
+
+Move left to:
+Position: (4, 1)
+North side: 6
+Facing side: 4 
+
+Move left to:
+Position: (3, 1)
+North side: 6
+Facing side: 2 
+
+Move left to:
+Position: (2, 1)
+North side: 6
+Facing side: 3 
+
+Move left to:
+Position: (1, 1)
+North side: 6
+Facing side: 5 
+
+Move left to:
+Position: (0, 1)
+North side: 6
+Facing side: 4 
+
+Move up to:
+Position: (0, 0)
+North side: 4
+Facing side: 1 
+
+Move right to:
+Position: (1, 0)
+North side: 4
+Facing side: 5 
+
+Move down to:
+Position: (1, 1)
+North side: 2
+Facing side: 4 
+
+Move down to:
+Position: (1, 2)
+North side: 3
+Facing side: 2 
+
+Move down to:
+Position: (1, 3)
+North side: 5
+Facing side: 3 
+
+Move down to:
+Position: (1, 4)
+North side: 4
+Facing side: 5 
+
+Move down to:
+Position: (1, 5)
+North side: 2
+Facing side: 4 
+
+Move down to:
+Position: (1, 6)
+North side: 3
+Facing side: 2 
+
+Move down to:
+Position: (1, 7)
+North side: 5
+Facing side: 3 
+
+Move down to:
+Position: (1, 8)
+North side: 4
+Facing side: 5 
+
+Move down to:
+Position: (1, 9)
+North side: 2
+Facing side: 4 
+
+Move down to:
+Position: (1, 10)
+North side: 3
+Facing side: 2 
+
+Move down to:
+Position: (1, 11)
+North side: 5
+Facing side: 3 
+
+Move left to:
+Position: (0, 11)
+North side: 5
+Facing side: 1
+Goal!
+
+Manhattan distance
+==========================
+States generated:  1411
+States visited: 875
+
+Starting at:
+Position: (11, 0)
+North side: 2
+Facing side: 1 
+
+Move down to:
+Position: (11, 1)
+North side: 6
+Facing side: 2 
+
+Move left to:
+Position: (10, 1)
+North side: 6
+Facing side: 3 
+
+Move left to:
+Position: (9, 1)
+North side: 6
+Facing side: 5 
+
+Move left to:
+Position: (8, 1)
+North side: 6
+Facing side: 4 
+
+Move left to:
+Position: (7, 1)
+North side: 6
+Facing side: 2 
+
+Move left to:
+Position: (6, 1)
+North side: 6
+Facing side: 3 
+
+Move left to:
+Position: (5, 1)
+North side: 6
+Facing side: 5 
+
+Move left to:
+Position: (4, 1)
+North side: 6
+Facing side: 4 
+
+Move left to:
+Position: (3, 1)
+North side: 6
+Facing side: 2 
+
+Move left to:
+Position: (2, 1)
+North side: 6
+Facing side: 3 
+
+Move left to:
+Position: (1, 1)
+North side: 6
+Facing side: 5 
+
+Move left to:
+Position: (0, 1)
+North side: 6
+Facing side: 4 
+
+Move up to:
+Position: (0, 0)
+North side: 4
+Facing side: 1 
+
+Move right to:
+Position: (1, 0)
+North side: 4
+Facing side: 5 
+
+Move down to:
+Position: (1, 1)
+North side: 2
+Facing side: 4 
+
+Move down to:
+Position: (1, 2)
+North side: 3
+Facing side: 2 
+
+Move down to:
+Position: (1, 3)
+North side: 5
+Facing side: 3 
+
+Move down to:
+Position: (1, 4)
+North side: 4
+Facing side: 5 
+
+Move down to:
+Position: (1, 5)
+North side: 2
+Facing side: 4 
+
+Move down to:
+Position: (1, 6)
+North side: 3
+Facing side: 2 
+
+Move down to:
+Position: (1, 7)
+North side: 5
+Facing side: 3 
+
+Move down to:
+Position: (1, 8)
+North side: 4
+Facing side: 5 
+
+Move down to:
+Position: (1, 9)
+North side: 2
+Facing side: 4 
+
+Move down to:
+Position: (1, 10)
+North side: 3
+Facing side: 2 
+
+Move down to:
+Position: (1, 11)
+North side: 5
+Facing side: 3 
+
+Move left to:
+Position: (0, 11)
+North side: 5
+Facing side: 1
+Goal!
+
+Die roll distance
+==========================
+States generated:  87
+States visited: 49
+
+Starting at:
+Position: (11, 0)
+North side: 2
+Facing side: 1 
+
+Move down to:
+Position: (11, 1)
+North side: 6
+Facing side: 2 
+
+Move left to:
+Position: (10, 1)
+North side: 6
+Facing side: 3 
+
+Move left to:
+Position: (9, 1)
+North side: 6
+Facing side: 5 
+
+Move left to:
+Position: (8, 1)
+North side: 6
+Facing side: 4 
+
+Move left to:
+Position: (7, 1)
+North side: 6
+Facing side: 2 
+
+Move left to:
+Position: (6, 1)
+North side: 6
+Facing side: 3 
+
+Move left to:
+Position: (5, 1)
+North side: 6
+Facing side: 5 
+
+Move left to:
+Position: (4, 1)
+North side: 6
+Facing side: 4 
+
+Move left to:
+Position: (3, 1)
+North side: 6
+Facing side: 2 
+
+Move left to:
+Position: (2, 1)
+North side: 6
+Facing side: 3 
+
+Move left to:
+Position: (1, 1)
+North side: 6
+Facing side: 5 
+
+Move left to:
+Position: (0, 1)
+North side: 6
+Facing side: 4 
+
+Move up to:
+Position: (0, 0)
+North side: 4
+Facing side: 1 
+
+Move right to:
+Position: (1, 0)
+North side: 4
+Facing side: 5 
+
+Move down to:
+Position: (1, 1)
+North side: 2
+Facing side: 4 
+
+Move down to:
+Position: (1, 2)
+North side: 3
+Facing side: 2 
+
+Move down to:
+Position: (1, 3)
+North side: 5
+Facing side: 3 
+
+Move down to:
+Position: (1, 4)
+North side: 4
+Facing side: 5 
+
+Move down to:
+Position: (1, 5)
+North side: 2
+Facing side: 4 
+
+Move down to:
+Position: (1, 6)
+North side: 3
+Facing side: 2 
+
+Move down to:
+Position: (1, 7)
+North side: 5
+Facing side: 3 
+
+Move down to:
+Position: (1, 8)
+North side: 4
+Facing side: 5 
+
+Move down to:
+Position: (1, 9)
+North side: 2
+Facing side: 4 
+
+Move down to:
+Position: (1, 10)
+North side: 3
+Facing side: 2 
+
+Move down to:
+Position: (1, 11)
+North side: 5
+Facing side: 3 
+
+Move left to:
+Position: (0, 11)
+North side: 5
+Facing side: 1
+Goal!
+

@@ -1,0 +1,243 @@
+Euclidian distance
+==========================
+States generated:  21
+States visited: 19
+
+Starting at:
+Position: (0, 1)
+North side: 2
+Facing side: 1 
+
+Move up to:
+Position: (0, 0)
+North side: 1
+Facing side: 5 
+
+Move right to:
+Position: (1, 0)
+North side: 1
+Facing side: 4 
+
+Move right to:
+Position: (2, 0)
+North side: 1
+Facing side: 2 
+
+Move right to:
+Position: (3, 0)
+North side: 1
+Facing side: 3 
+
+Move right to:
+Position: (4, 0)
+North side: 1
+Facing side: 5 
+
+Move down to:
+Position: (4, 1)
+North side: 2
+Facing side: 1 
+
+Move right to:
+Position: (5, 1)
+North side: 2
+Facing side: 4 
+
+Move down to:
+Position: (5, 2)
+North side: 3
+Facing side: 2 
+
+Move down to:
+Position: (5, 3)
+North side: 5
+Facing side: 3 
+
+Move down to:
+Position: (5, 4)
+North side: 4
+Facing side: 5 
+
+Move left to:
+Position: (4, 4)
+North side: 4
+Facing side: 1 
+
+Move up to:
+Position: (4, 3)
+North side: 1
+Facing side: 3 
+
+Move right to:
+Position: (5, 3)
+North side: 1
+Facing side: 5 
+
+Move down to:
+Position: (5, 4)
+North side: 2
+Facing side: 1
+Goal!
+
+Manhattan distance
+==========================
+States generated:  21
+States visited: 19
+
+Starting at:
+Position: (0, 1)
+North side: 2
+Facing side: 1 
+
+Move up to:
+Position: (0, 0)
+North side: 1
+Facing side: 5 
+
+Move right to:
+Position: (1, 0)
+North side: 1
+Facing side: 4 
+
+Move right to:
+Position: (2, 0)
+North side: 1
+Facing side: 2 
+
+Move right to:
+Position: (3, 0)
+North side: 1
+Facing side: 3 
+
+Move right to:
+Position: (4, 0)
+North side: 1
+Facing side: 5 
+
+Move down to:
+Position: (4, 1)
+North side: 2
+Facing side: 1 
+
+Move right to:
+Position: (5, 1)
+North side: 2
+Facing side: 4 
+
+Move down to:
+Position: (5, 2)
+North side: 3
+Facing side: 2 
+
+Move down to:
+Position: (5, 3)
+North side: 5
+Facing side: 3 
+
+Move down to:
+Position: (5, 4)
+North side: 4
+Facing side: 5 
+
+Move left to:
+Position: (4, 4)
+North side: 4
+Facing side: 1 
+
+Move up to:
+Position: (4, 3)
+North side: 1
+Facing side: 3 
+
+Move right to:
+Position: (5, 3)
+North side: 1
+Facing side: 5 
+
+Move down to:
+Position: (5, 4)
+North side: 2
+Facing side: 1
+Goal!
+
+Die roll distance
+==========================
+States generated:  16
+States visited: 15
+
+Starting at:
+Position: (0, 1)
+North side: 2
+Facing side: 1 
+
+Move up to:
+Position: (0, 0)
+North side: 1
+Facing side: 5 
+
+Move right to:
+Position: (1, 0)
+North side: 1
+Facing side: 4 
+
+Move right to:
+Position: (2, 0)
+North side: 1
+Facing side: 2 
+
+Move right to:
+Position: (3, 0)
+North side: 1
+Facing side: 3 
+
+Move right to:
+Position: (4, 0)
+North side: 1
+Facing side: 5 
+
+Move down to:
+Position: (4, 1)
+North side: 2
+Facing side: 1 
+
+Move right to:
+Position: (5, 1)
+North side: 2
+Facing side: 4 
+
+Move down to:
+Position: (5, 2)
+North side: 3
+Facing side: 2 
+
+Move down to:
+Position: (5, 3)
+North side: 5
+Facing side: 3 
+
+Move down to:
+Position: (5, 4)
+North side: 4
+Facing side: 5 
+
+Move left to:
+Position: (4, 4)
+North side: 4
+Facing side: 1 
+
+Move up to:
+Position: (4, 3)
+North side: 1
+Facing side: 3 
+
+Move right to:
+Position: (5, 3)
+North side: 1
+Facing side: 5 
+
+Move down to:
+Position: (5, 4)
+North side: 2
+Facing side: 1
+Goal!
+

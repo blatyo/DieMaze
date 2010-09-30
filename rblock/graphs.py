@@ -1,6 +1,9 @@
 import graph
 
 class Maze:	 
+	"""Maze takes in a file and builds a maze graph from it."""
+	
+	"""Array offsets for the different directions."""
 	Up, Right, Down, Left = 0, 1, 2, 3
 	
 	def __init__(self, file_name):
@@ -8,6 +11,7 @@ class Maze:
 		self.build_graph(self.read_file(file_name))
 		
 	def read_file(self, file_name):
+		"""Builds a matrix from the input file where each character is a cell."""
 		rows = []
 		
 		f = open(file_name, 'rU')
@@ -18,6 +22,7 @@ class Maze:
 		return rows
 	
 	def build_graph(self, matrix):
+		"""Builds a graph from the matrix generated from the maze file."""
 		for i in range(len(matrix)):
 			for j in range(len(matrix[i])):
 				if matrix[i][j] != "*":
@@ -38,15 +43,20 @@ class Maze:
 					self.states[node.name] = node
 
 class Die:
+	"""Builds a die graph. This sucker is a bit tricky since it's 3D."""
+	
 	def __init__(self):
 		self.states = {}
 		self.build_graph()
 	
 	def build_graph(self):
-		for i in range(1, 7):
+		"""Builds the states and the graph."""
+		
+		for i in range(1, 7): #create all the states
 			self.states[i] = graph.Node("%i" % (i))
 			self.states[i].x = i
 		
+		#connect the states
 		self.states[1].transitions = [self.states[2], self.states[4], self.states[5], self.states[3]]
 		self.states[2].transitions = [self.states[6], self.states[4], self.states[1], self.states[3]]
 		self.states[4].transitions = [self.states[2], self.states[6], self.states[5], self.states[1]]
