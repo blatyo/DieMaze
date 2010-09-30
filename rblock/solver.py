@@ -29,11 +29,17 @@ class Solver(object):
 		states_generated = 1 #accounts for initial state
 		states_visited = 0
 		
+		print "------ Visited States ------"
 		frontier = [start]
 		while(len(frontier) > 0):
 			cs.set_state(sorted(frontier, key=lambda current: f[current])[0]) #use best next step
-			states_visited += 1
 			x = cs.get_state()
+			states_visited = states_visited + 1
+			
+			# Track whats going on
+			if came_from.get(x):
+				print "Going ", came_from.get(x)[1]
+			print cs.describe_state(), "\n"
 			
 			if cs.goal_reached():
 				self.print_stats(states_generated, states_visited)
@@ -43,18 +49,13 @@ class Solver(object):
 			frontier.remove(x)
 			closed_list[x] = True
 			
-			# Track whats going on
-			"""if came_from.get(x):
-				print came_from.get(x)[1]
-			print cs.describe_state()"""
-			
 			moves = cs.moves()
 			for move in moves.keys():
 				y = moves[move]
 				if closed_list.get(y):
 					continue
 				
-				states_generated += 1
+				states_generated = states_generated + 1
 				
 				tentative_g = g[x] + 1
 				
@@ -76,6 +77,7 @@ class Solver(object):
 	
 	def print_stats(self, states_generated, states_visited):
 		"""Prints stats in a nice format."""
+		print "------ Results ------"
 		print "States generated: ", states_generated
 		print "States visited:", states_visited
 		print
@@ -105,4 +107,5 @@ class Solver(object):
 				print "Goal!\n"
 			return retval
 		else:
+			print "------ Solution ------"
 			print "Starting at:"
